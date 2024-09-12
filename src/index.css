@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css o tu archivo CSS principal */
+
+/* Importar la fuente desde la carpeta en tu proyecto */
+/* src/index.css o tu archivo CSS principal */
+
+/* Importar la fuente desde la carpeta en tu proyecto */
+@font-face {
+    font-family: 'Nexa';
+    src: url('../public/Fonts/Nexa-Trial-Regular.ttf') format('ttf'),
+        ;
+    font-weight: normal;
+    font-style: normal;
+}
