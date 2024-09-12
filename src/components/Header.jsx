@@ -22,7 +22,7 @@ function Header() {
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2  dark:text-white dark:hover:bg-bordo dark:focus:ring-bordo"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2  dark:text-white dark:hover:bg-rojo dark:focus:ring-rojo"
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen ? "true" : "false"}
             onClick={toggleMenu}
@@ -54,25 +54,25 @@ function Header() {
               <li>
                 <a
                   href="#"
-                  className="text-bordo font-nexa font-semibold "
+                  className="text-rojo font-nexa font-semibold "
                   aria-current="page"
                 >
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="#" className="text-bordo font-nexa font-semibold ">
+                <a href="#" className="text-rojo font-nexa font-semibold ">
                   Sobre Nosotros
                 </a>
               </li>
               <li>
-                <a href="#" className="text-bordo font-nexa font-semibold ">
+                <a href="#" className="text-rojo font-nexa font-semibold ">
                   Servicios
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-bordo font-nexa font-semibold ">
+                <a href="#" className="text-rojo font-nexa font-semibold ">
                   Contacto
                 </a>
               </li>
