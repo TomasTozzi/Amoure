@@ -1,0 +1,28 @@
+{
+  "servicios": [
+    {
+      "id": 1,
+      "nombre": "Excursión a la Montaña",
+      "destino": ["Mendoza","Bariloche"],
+      "itinerario": "XD",
+      "img": "https://example.com/images/montana.jpg",
+      "descripcion": "Disfruta de una aventura guiada en la majestuosa Cordillera de los Andes, con vistas impresionantes y un día completo de actividades al aire libre."
+    },
+    {
+      "id": 2,
+      "nombre": "Tour por la Ciudad",
+      "destino":["Mendoza","Bariloche"],
+      "itinerario": "XD",
+      "img": "https://example.com/images/ciudad.jpg",
+      "descripcion": "Explora el centro histórico con un recorrido guiado por los principales monumentos y disfruta de la gastronomía local."
+    },
+    {
+      "id": 3,
+      "nombre": "Aventura en la Playa",
+      "destino": ["Mendoza","Bariloche"],
+      "itinerario": "XD",
+      "img": "https://example.com/images/playa.jpg",
+      "descripcion": "Relájate en las cristalinas aguas de la Playa del Sol y participa en emocionantes actividades acuáticas con guías experimentados."
+    }
+  ]
+}

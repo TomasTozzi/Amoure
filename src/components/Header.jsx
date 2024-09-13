@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <>
-      <nav id="inicio" className="bg-rosa ">
+      <nav id="inicio" className="bg-rosa fixed top-0 right-0 left-0 z-50">
         <div className="max-w-screen-xl flex flex-wrap  items-center justify-between mx-auto p-4">
           <a
             href="#inicio"
@@ -60,13 +60,9 @@ function Header() {
                   Inicio
                 </a>
               </li>
+
               <li>
-                <a href="#" className="text-rojo font-nexa font-semibold ">
-                  Sobre Nosotros
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-rojo font-nexa font-semibold ">
+                <a href="#servicios" className="text-rojo font-nexa font-semibold ">
                   Servicios
                 </a>
               </li>
