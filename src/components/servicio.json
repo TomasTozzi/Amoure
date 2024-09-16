@@ -2,7 +2,7 @@
   "servicios": [
     {
       "id": 1,
-      "nombre": "Excursión a la Montaña",
+      "nombre": "Despedida de soltero",
       "destino": ["Mendoza","Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/montana.jpg",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "nombre": "Tour por la Ciudad",
+      "nombre": "Despedida de soltera",
       "destino":["Mendoza","Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/ciudad.jpg",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "nombre": "Aventura en la Playa",
+      "nombre": "Amigos",
       "destino": ["Mendoza","Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/playa.jpg",

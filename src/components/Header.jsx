@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LogoRojo from "../assets/PNG's/Logotipos/Amouré_3.LogotipoRojo.png"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,9 +16,7 @@ function Header() {
             href="#inicio"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <p className="self-center  text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Amoure
-            </p>
+            <img src={LogoRojo} alt="LogoRojo" className="h-10"  />
           </a>
           <button
             data-collapse-toggle="navbar-default"
