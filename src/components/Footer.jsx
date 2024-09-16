@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa'; // Importa
 function Footer() {
     return (
         <>
-            <footer className="bg-bordo text-white text-center p-4">
+            <footer className="bg-rojo text-white text-center p-4">
                 <div className="flex justify-center space-x-6 mb-4">
                     <a
                         href="https://wa.me/1234567890"
