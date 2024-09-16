@@ -16,3 +16,7 @@
     font-style: normal;
 }
 
+.bg-home2{
+  background: url("./assets/baner-home.jpg") no-repeat center center;
+  background-size: cover;
+}
