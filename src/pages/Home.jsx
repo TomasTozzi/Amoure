@@ -2,6 +2,7 @@ import About from "../components/About";
 import Servicios from "../components/Servicios";
 import LogoRojo from "../assets/PNG's/Logotipos/AmouréSolo_3.Logotipo Rojo.png";
 import ContactForm from "../components/Contact.Form";
+import Mapa from "../components/Mapa";
 
 function Home() {
   return (
@@ -38,7 +39,10 @@ function Home() {
       </div>
 
       <Servicios />
-      <ContactForm />
+      <div className="flex flex-col items-center md:flex-row-reverse">
+        <ContactForm />
+        <Mapa />
+      </div>
     </div>
   );
 }
