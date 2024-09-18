@@ -3,26 +3,26 @@
     {
       "id": 1,
       "nombre": "Despedida de soltero",
-      "destino": ["Mendoza","Bariloche"],
+      "destino": ["Mendoza", "Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/montana.jpg",
-      "descripcion": "Disfruta de una aventura guiada en la majestuosa Cordillera de los Andes, con vistas impresionantes y un día completo de actividades al aire libre."
+      "descripcion": "Una despedida de solteros en Bariloche o Mendoza es la combinación perfecta de aventura y diversión. Disfruta de paisajes increíbles, actividades emocionantes y una vida nocturna inigualable, ideal para celebrar con amigos en un entorno inolvidable."
     },
     {
       "id": 2,
       "nombre": "Despedida de soltera",
-      "destino":["Mendoza","Bariloche"],
+      "destino": ["Mendoza", "Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/ciudad.jpg",
-      "descripcion": "Explora el centro histórico con un recorrido guiado por los principales monumentos y disfruta de la gastronomía local."
+      "descripcion": "Un viaje de despedida para un grupo mixto en Bariloche o Mendoza combina aventura y relajación para todos. En Bariloche, disfruta de actividades al aire libre y relájate en spas o navegando por el lago. En Mendoza, explora viñedos, cata vinos, y vive la emoción de deportes extremos. La combinación perfecta de diversión y disfrute en grupo."
     },
     {
       "id": 3,
       "nombre": "Amigos",
-      "destino": ["Mendoza","Bariloche"],
+      "destino": ["Mendoza", "Bariloche"],
       "itinerario": "XD",
       "img": "https://example.com/images/playa.jpg",
-      "descripcion": "Relájate en las cristalinas aguas de la Playa del Sol y participa en emocionantes actividades acuáticas con guías experimentados."
+      "descripcion": "Una despedida de solteras en Bariloche o Mendoza es el plan perfecto para disfrutar con amigas. En Bariloche, relájate en spas, pasea por lagos o disfruta de la vibrante vida nocturna. En Mendoza, catas de vino, rutas en viñedos y tratamientos de spa crean una experiencia inolvidable llena de lujo y tranquilidad."
     }
   ]
 }

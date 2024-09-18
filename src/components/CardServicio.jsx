@@ -5,7 +5,7 @@ function CardServicio() {
   return (
     // Ajusta la ruta si es necesario
 
-    <div className="grid gap-8 px-4  py-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 px-4  py-8 sm:grid-cols-1 md:grid-cols-3">
       {Servicios.servicios.map((servicio) => (
         <div key={servicio.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
           <img
@@ -25,4 +25,4 @@ function CardServicio() {
 }
 
 export default CardServicio;
-                                           
+                                          

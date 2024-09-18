@@ -11,13 +11,13 @@ function Home() {
         {/* Capa con opacidad */}
         <div className="absolute inset-0 bg-black opacity-65"></div>
         {/* Contenido */}
-        <div className="relative font-hat flex flex-col items-center justify-center z-10 mt-10  h-[40vh]">
+        <div className="relative font-hat flex flex-col items-center justify-center z-10 m-10   h-[40vh] md:h-[70vh]">
           <img src={LogoRojo} alt="" className="h-24" />
           <p className="text-white text-center text-xl">
             El primer <span className="text-rosa font-bold">'SI'</span> lo das
             con <span className="text-rosa font-bold">AMIGOS</span>{" "}
           </p>
-          <button className="hidden">Contactanos</button>
+          <a href="#contacto" className="hidden md:block bg-white text-rojo font-semibold py-2 mt-10 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">Contactanos</a>
         </div>
       </div>
       <About />
@@ -31,7 +31,7 @@ function Home() {
           única!
         </p>
         <a
-          href="/contacto"
+          href="#contacto"
           className="bg-white text-rojo font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-200 transition duration-300"
         >
           Cotiza tu viaje
@@ -39,7 +39,7 @@ function Home() {
       </div>
 
       <Servicios />
-      <div className="flex flex-col items-center md:flex-row-reverse">
+      <div className="flex flex-col items-center md:flex-row-reverse sd:w-[100vw]">
         <ContactForm />
         <Mapa />
       </div>

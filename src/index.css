@@ -24,3 +24,6 @@
   background: url("./assets/Amouré_3.Patrónamor.svg");
   
 }
+html{
+  scroll-behavior: smooth;
+}

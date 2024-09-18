@@ -67,7 +67,7 @@ function Header() {
               </li>
 
               <li>
-                <a href="#" className="text-rojo font-nexa font-semibold ">
+                <a href="#contacto" className="text-rojo font-nexa font-semibold ">
                   Contacto
                 </a>
               </li>

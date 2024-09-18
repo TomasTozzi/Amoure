@@ -22,15 +22,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
-        <div className='flex flex-col items-center'>
-      <h2 className="text-4xl font-semibold text-rojo text-center mb-6">Reserva tu viaje</h2>
-      <hr className="bg-rojo h-[3px] w-[30vw] mb-6" />
+    <div id='contacto' className="max-w-md mx-auto p-6">
+      <div className='flex flex-col items-center'>
+        <h2 className="text-4xl font-semibold text-rojo text-center mb-6">Reserva tu viaje</h2>
+        <hr className="bg-rojo h-[3px] w-[30vw] mb-6" />
       </div>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        
+
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Selección del destino */}
-        <div>
+        <div className="md:col-span-2">
           <label htmlFor="destino" className="block text-lg font-medium text-gray-700">
             Destino:
           </label>
@@ -106,6 +106,20 @@ const ContactForm = () => {
           />
         </div>
 
+        {/* Email */}
+        <div className="md:col-span-2">
+          <label htmlFor="email" className="block text-lg font-medium text-gray-700">
+            Email:
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full mt-2 p-2 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
         {/* Teléfono */}
         <div>
           <label htmlFor="telefono" className="block text-lg font-medium text-gray-700">
@@ -121,28 +135,16 @@ const ContactForm = () => {
           />
         </div>
 
-        {/* Email */}
-        <div>
-          <label htmlFor="email" className="block text-lg font-medium text-gray-700">
-            Email:
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full mt-2 p-2 border border-gray-300 rounded-lg"
-            required
-          />
-        </div>
 
         {/* Botón de envío */}
-        <button
-          type="submit"
-          className="w-full bg-rojo text-white py-2 px-4 rounded-lg font-bold hover:bg-red-600 transition duration-300"
-        >
-          Enviar Reserva
-        </button>
+        <div className="md:col-span-2">
+          <button
+            type="submit"
+            className="w-full bg-rojo text-white py-2 px-4 rounded-lg font-bold hover:bg-red-600 transition duration-300"
+          >
+            Enviar Reserva
+          </button>
+        </div>
       </form>
     </div>
   );
