@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import foto from "../assets/baner-home.jpg";
+
 import Servicios from "./servicio.json";
 function CardServicio() {
   return (
@@ -9,9 +9,9 @@ function CardServicio() {
       {Servicios.servicios.map((servicio) => (
         <div key={servicio.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
           <img
-            src={foto}
+            src={servicio.img}
             alt={servicio.nombre}
-            className="w-full h-48 object-cover"
+            className="w-full h-48 object-cover object-top" 
           />
           <div className="p-6">
             <h2 className="text-xl font-bold text-rojo mb-2">{servicio.nombre}</h2>
