@@ -15,7 +15,7 @@ function Footer() {
                         <FaWhatsapp />
                     </a>
                     <a
-                        href="https://instagram.com/tu_instagram"
+                        href="https://www.instagram.com/amoure_ar?igsh=MTBrZjVoaDV5OXQzcg%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
