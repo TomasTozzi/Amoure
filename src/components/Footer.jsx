@@ -24,7 +24,7 @@ function Footer() {
                         <FaInstagram />
                     </a>
                     <a
-                        href="mailto:email@ejemplo.com"
+                        href="mailto:Amoure@gmail.com"
                         aria-label="Email"
                         className="text-white text-2xl hover:text-blue-500 transition duration-300"
                     >
