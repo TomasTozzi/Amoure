@@ -13,7 +13,7 @@ function Header() {
       <nav id="inicio" className="bg-rosa fixed top-0 right-0 left-0 z-50">
         <div className="max-w-screen-xl flex flex-wrap  items-center justify-between mx-auto p-4">
           <a
-            href="#inicio"
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={LogoRojo} alt="LogoRojo" className="h-10"  />
@@ -52,7 +52,7 @@ function Header() {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="text-rojo font-nexa font-semibold "
                   aria-current="page"
                 >

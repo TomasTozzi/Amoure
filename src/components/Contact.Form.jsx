@@ -22,10 +22,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div id='contacto' className="max-w-md mx-auto p-6">
+    <div id='contacto' className="max-w-md md:w-[100%] mx-auto p-6">
       <div className='flex flex-col items-center'>
         <h2 className="text-4xl font-semibold text-rojo text-center mb-6">Reserva tu viaje</h2>
-        <hr className="bg-rojo h-[3px] w-[30vw] mb-6" />
       </div>
 
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 md:grid-cols-2">

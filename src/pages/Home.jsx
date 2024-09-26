@@ -39,10 +39,7 @@ function Home() {
       </div>
 
       <Servicios />
-      <div className="flex flex-col items-center md:flex-row-reverse sd:w-[100vw]">
-        <ContactForm />
-        <Mapa />
-      </div>
+  
     </div>
   );
 }

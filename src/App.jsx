@@ -5,17 +5,13 @@ import Reserva from "./pages/Reserva";
 
 export default function App() {
   return (
-  
-
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />  
-          <Route path="reserva" element={<Reserva />} /> 
+          <Route path="reserva/:id" element={<Reserva />} />
         </Route>
       </Routes>
     </Router>
-   
   );
 }
- 
