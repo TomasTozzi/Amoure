@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LogoRojo from "../assets/PNG's/Logotipos/Amouré_3.LogotipoRojo.png"
+import LogoRojo from "../assets/PNG's/Logotipos/Amouré_3.LogotipoRojo.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,17 +11,17 @@ function Header() {
   return (
     <>
       <nav id="inicio" className="bg-rosa fixed top-0 right-0 left-0 z-50">
-        <div className="max-w-screen-xl flex flex-wrap  items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={LogoRojo} alt="LogoRojo" className="h-10"  />
+            <img src={LogoRojo} alt="LogoRojo" className="h-10" />
           </a>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2  dark:text-white dark:hover:bg-rojo dark:focus:ring-rojo"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 dark:text-white dark:hover:bg-rojo dark:focus:ring-rojo"
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen ? "true" : "false"}
             onClick={toggleMenu}
@@ -45,15 +45,15 @@ function Header() {
           </button>
           <div
             className={`${
-              isMenuOpen ? "block" : "hidden"
-            } w-full md:block md:w-auto`}
+              isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+            } w-full md:max-h-full md:opacity-100 md:block md:w-auto transition-all duration-500 ease-in-out overflow-hidden`}
             id="navbar-default"
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               <li>
                 <a
                   href="/"
-                  className="text-rojo font-nexa font-semibold "
+                  className="text-rojo font-nexa font-semibold"
                   aria-current="page"
                 >
                   Inicio
@@ -61,13 +61,13 @@ function Header() {
               </li>
 
               <li>
-                <a href="#servicios" className="text-rojo font-nexa font-semibold ">
+                <a href="#servicios" className="text-rojo font-nexa font-semibold">
                   Servicios
                 </a>
               </li>
 
               <li>
-                <a href="#contacto" className="text-rojo font-nexa font-semibold ">
+                <a href="#contacto" className="text-rojo font-nexa font-semibold">
                   Contacto
                 </a>
               </li>

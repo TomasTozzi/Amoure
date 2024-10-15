@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Servicios from "../components/servicio";
 import ContactForm from "../components/Contact.Form";
+import BackButton from "../components/BackButton";
 
 // Datos de ejemplo
 const reviews = [
@@ -32,6 +34,7 @@ const renderStars = (rating) => {
 
 function Reserva() {
   const { id } = useParams();
+  const [loading, setLoading] = useState(true); // Estado de carga
   const servicio = Servicios.servicios.find(
     (servicio) => servicio.id === parseInt(id)
   );
@@ -45,8 +48,36 @@ function Reserva() {
     servicio?.img,
   ];
 
+  // Hook para hacer scroll al top al cargar el componente
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplaza el viewport al tope de la página
+    // Simulación de carga
+    const timer = setTimeout(() => {
+      setLoading(false); // Oculta la pantalla de carga después de 2 segundos
+    }, 2000); // Puedes ajustar el tiempo según sea necesario
+
+    return () => clearTimeout(timer); // Limpia el timeout cuando el componente se desmonte
+  }, []);
+
+  if (loading) {
+    // Pantalla de carga mejorada
+    return (
+      <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="text-center">
+          <div className="loader mb-6"></div> {/* Spinner animado */}
+          <p className="text-lg font-semibold text-gray-700 animate-pulse">
+            Cargando tu experiencia de viaje...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="container  mx-auto mt-20 px-4">
+    <div className="container mx-auto mt-20 px-4">
+      <div className="m-4">
+        <BackButton />
+      </div>
       {/* Título del servicio alineado a la izquierda */}
       <h1 className="text-4xl font-bold text-left text-gray-800 mb-6">
         {servicio?.nombre}
@@ -67,8 +98,6 @@ function Reserva() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 h-full">
           {galleryImages.slice(1).map((img, index) => (
             <div key={index} className="w-full h-64">
-              {" "}
-              {/* Ajustamos la altura aquí */}
               <img
                 src={img}
                 alt={`Galería ${index + 1}`}
