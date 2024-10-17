@@ -17,13 +17,12 @@ function Home() {
 
     return () => clearTimeout(timer); // Limpia el timeout cuando se desmonte
   }, []);
-
   if (loading) {
     // Pantalla de carga mejorada
     return (
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="text-center">
-          <div className="loader mb-6"></div> {/* Spinner animado */}
+          <div className="loader mb-6 mx-auto"></div> {/* Spinner animado centrado */}
           <p className="text-lg font-semibold text-gray-700 animate-pulse">
             Cargando la mejor experiencia de viaje...
           </p>
@@ -31,6 +30,7 @@ function Home() {
       </div>
     );
   }
+  
 
   return (
     <div className="font-hat scroll-smooth ">
