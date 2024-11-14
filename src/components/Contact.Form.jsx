@@ -22,7 +22,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div id='contacto' className="max-w-md md:w-[100%] mx-auto p-6">
+    <div className="max-w-md md:w-[100%] mx-auto p-6">
       <div className='flex flex-col items-center'>
         <h2 className="text-4xl font-semibold text-rojo text-center mb-6">Reserva tu viaje</h2>
       </div>

@@ -21,7 +21,7 @@ function Footer() {
         </div>
 
         {/* Sección de contacto */}
-        <div className="flex flex-col  ml-6 mb-10 lg:h-1/2 lg:gap-6 lg:m-auto">
+        <div id="contacto" className="flex flex-col  ml-6 mb-10 lg:h-1/2 lg:gap-6 lg:m-auto">
           <h2 className="text-4xl font-semibold my-6">Contáctanos</h2>
           <div className="flex flex-col text-lg ">
             <div className="   space-y-6">
